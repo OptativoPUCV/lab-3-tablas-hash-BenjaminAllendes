@@ -115,7 +115,10 @@ Pair * firstMap(HashMap * map) {
     for(int i = 0 ; i < capacidad ; i++){
         par = map->buckets[i] ;
         if (par != NULL) {
-            if (par->key != NULL) return par ;
+            if (par->key != NULL){
+                map->current = par ;
+                return par ;
+            } 
         }
     }
     return NULL;
