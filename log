@@ -187,3 +187,13 @@ Sun, Apr 13, 2025  5:31:43 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 5c600dc
+Sun, Apr 13, 2025  5:34:23 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:47:50: error: expected ')' before 'Pair'
+         if (strcmp(map->buckets[i]->key, (char * Pair)key) == 0) return ;
+                                                  ^~~~
+b513fe7
