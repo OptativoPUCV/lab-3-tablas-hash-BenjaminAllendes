@@ -44,7 +44,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     if (capacidad == map->size) return ;
     for(int i = 0 ; i < capacidad ; i++){
         if (map->buckets[i] == NULL) continue ;
-        if (strcmp(map->buckets[i]->key, key) == 0) return ;
+        if (is_equal(map->buckets[i]->key, key)) return ;
     }
     long posicion = hash(key, capacidad) % capacidad ;
     while (map->buckets[posicion] != NULL && map->buckets[posicion]->key != NULL)
