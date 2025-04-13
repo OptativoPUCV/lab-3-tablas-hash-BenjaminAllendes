@@ -266,3 +266,8 @@ hashmap.c:93:5: error: 'posible_posicion' undeclared (first use in this function
      ^~~~~~~~~~~~~~~~
 hashmap.c:93:5: note: each undeclared identifier is reported only once for each function it appears in
 67ffbed
+Sun, Apr 13, 2025  5:56:16 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+ca51ca2
