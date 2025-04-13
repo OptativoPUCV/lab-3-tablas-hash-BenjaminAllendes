@@ -375,3 +375,8 @@ Sun, Apr 13, 2025  6:13:55 PM:
  tests:  8|3
 total_score: 40/70
 0397e3b
+Sun, Apr 13, 2025  6:21:28 PM: 
+ hashmap.c | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+ tests:  0|0
+182f8ff
