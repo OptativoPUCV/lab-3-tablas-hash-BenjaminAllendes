@@ -40,8 +40,19 @@ int is_equal(void* key1, void* key2){
 
 
 void insertMap(HashMap * map, char * key, void * value) {
-
-
+    long capacidad = map->capacity ;
+    if (capacidad == map->size) return ;
+    for(int i = 0 ; i < capacidad ; i++){
+        if (!strcmp(map->buckets[i]->key, key)) return ;
+    }
+    int posicion = hash(key, capacidad) ;
+    while (map->buckets[posicion]->key == NULL && map->buckets[posicion] == NULL)
+    {
+        posicion = (posicion + 1) % capacidad ;
+    }
+    map->buckets[posicion]->key = key ;
+    map->buckets[posicion]->value = value ;
+    map->size ++ ;    
 }
 
 void enlarge(HashMap * map) {
