@@ -59,7 +59,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     par->key = key ;
     par->value = value ;
     map->buckets[posicion] = par ;
-    map->size = size ++ ;
+    map->size ++ ;
 }
 
 void enlarge(HashMap * map) {
