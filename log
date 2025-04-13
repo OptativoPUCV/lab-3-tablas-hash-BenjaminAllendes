@@ -60,3 +60,12 @@ hashmap.c:59:18: error: '*mapa->buckets' is a pointer; did you mean to use '->'?
                   ^~
                   ->
 8a89415
+Sun, Apr 13, 2025  5:03:08 PM: 
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:59:18: error: '*mapa->buckets' is a pointer; did you mean to use '->'?
+     mapa->buckets->buckets = NULL ;
+                  ^~
+                  ->
+86ff971
