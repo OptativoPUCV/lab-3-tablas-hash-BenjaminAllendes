@@ -119,7 +119,7 @@ Pair * searchMap(HashMap * map,  char * key) {
         posible_pos = (posible_pos + 1) % capacidad ;
         Pair * par = map->buckets[posible_pos] ;
         if (par == NULL) break ;
-        if (!strcmp(par->key, key)) return par ;
+        if (is_equal(par->key, key)) return par ;
     }
     return NULL ;
 }
