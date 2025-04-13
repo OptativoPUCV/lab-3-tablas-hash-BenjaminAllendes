@@ -92,10 +92,9 @@ Pair * searchMap(HashMap * map,  char * key) {
     
     long posible_posicion = hash(key, capacidad) ;
     if (map->buckets[posible_posicion]->key == key) return map->buckets[posible_posicion] ;
-    printf("debug debug everywhere!") ;
     while (map->buckets[posible_posicion] != NULL){
         posible_posicion = (posible_posicion + 1) % capacidad ;
-        if (map->buckets[posible_posicion]->key == key) return map->buckets[posible_posicion] ;
+        if (!strcmp(map->buckets[posible_posicion]->key == key)) return map->buckets[posible_posicion] ;
     }
     return NULL ;
 }
