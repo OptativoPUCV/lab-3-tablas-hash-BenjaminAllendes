@@ -87,3 +87,8 @@ hashmap.c:59:11: error: expected identifier before '(' token
      mapa->(*buckets) = NULL ;
            ^
 96f6fe8
+Sun, Apr 13, 2025  5:03:53 PM: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|0
+f40f0e6
