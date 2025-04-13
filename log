@@ -31,3 +31,13 @@ Sun, Apr 13, 2025  5:01:55 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 1b81bad
+Sun, Apr 13, 2025  5:02:19 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:59:11: error: expected identifier before '->' token
+     mapa->->buckets = NULL ;
+           ^~
+b0202d2
