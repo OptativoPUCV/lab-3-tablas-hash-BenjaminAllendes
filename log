@@ -129,3 +129,13 @@ Sun, Apr 13, 2025  5:09:47 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 4a9a96a
+Sun, Apr 13, 2025  5:10:14 PM: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:61:1: error: expected ';' before '}' token
+ }
+ ^
+cf720e4
