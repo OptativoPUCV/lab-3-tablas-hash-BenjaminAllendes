@@ -55,9 +55,11 @@ void insertMap(HashMap * map, char * key, void * value) {
         posicion = (posicion + 1) % capacidad ;
     }
     printf("Cuarto debug") ;
-    map->buckets[posicion]->key = key ;
-    map->buckets[posicion]->value = value ;
-    map->size ++ ;    
+    Pair *par = (Pair *) malloc(sizeof(Pair)) ;
+    par->key = key ;
+    par->value = value ;
+    map->buckets[posicion] = par ;
+    map->size = size ++ ;
 }
 
 void enlarge(HashMap * map) {

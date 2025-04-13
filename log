@@ -238,3 +238,14 @@ Sun, Apr 13, 2025  5:45:33 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 8cb416c
+Sun, Apr 13, 2025  5:47:40 PM: 
+ hashmap.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:62:17: error: 'size' undeclared (first use in this function)
+     map->size = size ++ ;
+                 ^~~~
+hashmap.c:62:17: note: each undeclared identifier is reported only once for each function it appears in
+1c7d54d
