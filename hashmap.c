@@ -88,9 +88,15 @@ void eraseMap(HashMap * map,  char * key) {
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
-
-
-    return NULL;
+    long capacidad = map->capacity ;
+    
+    posible_posicion = hash(key, capacidad) ;
+    if (map->buckets[posible_posicion]->key == key) return map->buckets[posible_posicion] ;
+    while (map->buckets[posible_posicion] != NULL){
+        posible_posicion = (posible_posicion + 1) % capacidad ;
+        if (map->buckets[posible_posicion]->key == key) return map->buckets[posible_posicion] ;
+    }
+    return NULL ;
 }
 
 Pair * firstMap(HashMap * map) {

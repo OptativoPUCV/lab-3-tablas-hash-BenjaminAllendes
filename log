@@ -255,3 +255,14 @@ Sun, Apr 13, 2025  5:47:51 PM:
  tests:  5|4
 total_score: 30/70
 aa3485f
+Sun, Apr 13, 2025  5:56:07 PM: 
+ hashmap.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:93:5: error: 'posible_posicion' undeclared (first use in this function)
+     posible_posicion = hash(key, capacidad) ;
+     ^~~~~~~~~~~~~~~~
+hashmap.c:93:5: note: each undeclared identifier is reported only once for each function it appears in
+67ffbed
