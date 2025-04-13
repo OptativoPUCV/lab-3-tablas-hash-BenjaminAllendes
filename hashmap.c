@@ -42,19 +42,15 @@ int is_equal(void* key1, void* key2){
 void insertMap(HashMap * map, char * key, void * value) {
     long capacidad = map->capacity ;
     if (capacidad == map->size) return ;
-    printf("Primer debug") ;
     for(int i = 0 ; i < capacidad ; i++){
         if (map->buckets[i] == NULL) continue ;
         if (strcmp(map->buckets[i]->key, key) == 0) return ;
     }
-    printf("Segundo debug") ;
     long posicion = hash(key, capacidad) % capacidad ;
-    printf("Tercer debug") ;
     while (map->buckets[posicion] != NULL && map->buckets[posicion]->key != NULL)
     {
         posicion = (posicion + 1) % capacidad ;
     }
-    printf("Cuarto debug") ;
     Pair *par = (Pair *) malloc(sizeof(Pair)) ;
     par->key = key ;
     par->value = value ;
