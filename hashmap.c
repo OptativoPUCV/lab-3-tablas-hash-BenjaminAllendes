@@ -48,7 +48,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         if (strcmp(map->buckets[i]->key, key) == 0) return ;
     }
     printf("Segundo debug") ;
-    long posicion = hash(key, capacidad) ;
+    long posicion = hash(key, capacidad) % capacidad ;
     printf("Tercer debug") ;
     while (map->buckets[posicion] != NULL && map->buckets[posicion]->key != NULL)
     {
