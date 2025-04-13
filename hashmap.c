@@ -112,7 +112,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 Pair * firstMap(HashMap * map) {
     long capacidad = map->capacity ;
     Pair *par ;
-    for(int i = 0 : i < capacidad : i++){
+    for(int i = 0 ; i < capacidad ; i++){
         par = map->buckets[i] ;
         if (par != NULL) {
             if (par->key != NULL) return par ;
