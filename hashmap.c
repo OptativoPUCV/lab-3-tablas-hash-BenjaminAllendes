@@ -111,7 +111,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     long capacidad = map->capacity ;
     
     long posible_pos = hash(key, capacidad) ;
-    if (!strcmp(map->buckets[posible_pos]->key, key)){ 
+    if (is_equal(map->buckets[posible_pos]->key, key)){ 
         map->current = posible_pos ;
         return map->buckets[posible_pos] ;
     }
