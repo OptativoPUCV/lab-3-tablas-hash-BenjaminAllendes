@@ -465,3 +465,9 @@ hashmap.c:132:9: error: 'par' undeclared (first use in this function)
          ^~~
 hashmap.c:132:9: note: each undeclared identifier is reported only once for each function it appears in
 464d69f
+Sun, Apr 13, 2025  6:28:44 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|2
+total_score: 50/70
+93bf39a

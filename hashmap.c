@@ -126,7 +126,7 @@ Pair * firstMap(HashMap * map) {
 
 Pair * nextMap(HashMap * map) {
     long capacidad = map->capacity ;
-    long current = map->current
+    long current = map->current ;
     Pair *par ;
     for(int i = current ; i < capacidad ; i++){
         par = map->buckets[i] ;
