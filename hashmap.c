@@ -138,6 +138,4 @@ Pair * nextMap(HashMap * map) {
         }
     }
     return NULL;
-
-    return NULL;
 }
