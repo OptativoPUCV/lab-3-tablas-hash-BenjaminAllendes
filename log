@@ -41,3 +41,11 @@ hashmap.c:59:11: error: expected identifier before '->' token
      mapa->->buckets = NULL ;
            ^~
 b0202d2
+Sun, Apr 13, 2025  5:02:38 PM: 
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:59:11: error: expected identifier before '->' token
+     mapa->->buckets = NULL ;
+           ^~
+e0cf016
