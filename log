@@ -108,3 +108,13 @@ Sun, Apr 13, 2025  5:08:00 PM:
  1 file changed, 1 insertion(+)
  tests:  0|0
 2d39085
+Sun, Apr 13, 2025  5:08:41 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:60:12: error: invalid type argument of '->' (have 'HashMap {aka struct HashMap}')
+     (*mapa)->buckets = (Pair *) malloc(sizeof(Pair)) ;
+            ^~
+97882c9
