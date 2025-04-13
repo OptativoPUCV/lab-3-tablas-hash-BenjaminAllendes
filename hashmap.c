@@ -88,13 +88,12 @@ Pair * searchMap(HashMap * map,  char * key) {
     
     long posible_pos = hash(key, capacidad) ;
     if (map->buckets[posible_pos]->key == key) return map->buckets[posible_pos] ;
-    while (map->buckets[posible_pos] != NULL){
+    while (1){
         posible_pos = (posible_pos + 1) % capacidad ;
         Pair * par = map->buckets[posible_pos] ;
-        if (par == NULL) continue ;
+        if (par == NULL) break ;
         if (strcmp(par->key, key) == 0) return map->buckets[posible_pos] ;
     }
-    printf("Paso esto") ;
     return NULL ;
 }
 
