@@ -70,6 +70,7 @@ void enlarge(HashMap * map) {
     }
     map->size = 0 ;
     for(long i = 0 ; i < new_capacity ; i++){
+        if (buckets_auxiliar[i] == NULL) continue ;
         insertMap(map, buckets_auxiliar[i]->key, buckets_auxiliar[i]->value) ;
     }
 
