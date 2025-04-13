@@ -453,3 +453,15 @@ hashmap.c:132:9: error: 'par' undeclared (first use in this function)
          ^~~
 hashmap.c:132:9: note: each undeclared identifier is reported only once for each function it appears in
 414bea7
+Sun, Apr 13, 2025  6:28:41 PM: 
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'nextMap':
+hashmap.c:130:5: error: expected ',' or ';' before 'Pair'
+     Pair *par ;
+     ^~~~
+hashmap.c:132:9: error: 'par' undeclared (first use in this function)
+         par = map->buckets[i] ;
+         ^~~
+hashmap.c:132:9: note: each undeclared identifier is reported only once for each function it appears in
+464d69f
