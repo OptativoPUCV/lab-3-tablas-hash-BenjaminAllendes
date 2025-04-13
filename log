@@ -118,3 +118,9 @@ hashmap.c:60:12: error: invalid type argument of '->' (have 'HashMap {aka struct
      (*mapa)->buckets = (Pair *) malloc(sizeof(Pair)) ;
             ^~
 97882c9
+Sun, Apr 13, 2025  5:09:26 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+7867b53
