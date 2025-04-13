@@ -87,7 +87,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     long capacidad = map->capacity ;
     
     long posible_pos = hash(key, capacidad) ;
-    if (map->buckets[posible_pos]->key == key) return map->buckets[posible_pos] ;
+    if (!strcmp(map->buckets[posible_pos]->key, key)) return map->buckets[posible_pos] ;
     while (1){
         posible_pos = (posible_pos + 1) % capacidad ;
         Pair * par = map->buckets[posible_pos] ;
