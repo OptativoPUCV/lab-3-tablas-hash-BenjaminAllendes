@@ -79,3 +79,11 @@ hashmap.c:59:11: error: expected identifier before '(' token
      mapa->(*buckets) = NULL ;
            ^
 4e74228
+Sun, Apr 13, 2025  5:03:37 PM: 
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:59:11: error: expected identifier before '(' token
+     mapa->(*buckets) = NULL ;
+           ^
+96f6fe8
