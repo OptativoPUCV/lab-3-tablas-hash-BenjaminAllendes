@@ -94,6 +94,7 @@ Pair * searchMap(HashMap * map,  char * key) {
         if (par == NULL) continue ;
         if (strcmp(par->key, key) == 0) return map->buckets[posible_pos] ;
     }
+    printf("Paso esto") ;
     return NULL ;
 }
 
