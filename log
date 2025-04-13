@@ -386,3 +386,33 @@ Sun, Apr 13, 2025  6:22:35 PM:
  tests:  11|2
 total_score: 50/70
 892a558
+Sun, Apr 13, 2025  6:26:12 PM: 
+ hashmap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'firstMap':
+hashmap.c:115:19: error: expected ',' or ';' before ':' token
+     for(int i = 0 : i < capacidad : i++){
+                   ^
+hashmap.c:121:5: error: expected expression before 'return'
+     return NULL;
+     ^~~~~~
+hashmap.c:122:1: error: expected expression before '}' token
+ }
+ ^
+hashmap.c:122:1: error: expected expression before '}' token
+hashmap.c:115:13: error: unused variable 'i' [-Werror=unused-variable]
+     for(int i = 0 : i < capacidad : i++){
+             ^
+hashmap.c:114:11: error: unused variable 'par' [-Werror=unused-variable]
+     Pair *par ;
+           ^~~
+hashmap.c:113:10: error: unused variable 'capacidad' [-Werror=unused-variable]
+     long capacidad = map->capacity ;
+          ^~~~~~~~~
+hashmap.c:122:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+db75322
