@@ -197,3 +197,8 @@ hashmap.c:47:50: error: expected ')' before 'Pair'
          if (strcmp(map->buckets[i]->key, (char * Pair)key) == 0) return ;
                                                   ^~~~
 b513fe7
+Sun, Apr 13, 2025  5:34:52 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+1c055a8
