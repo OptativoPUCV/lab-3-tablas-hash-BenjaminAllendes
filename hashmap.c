@@ -86,11 +86,11 @@ void eraseMap(HashMap * map,  char * key) {
 Pair * searchMap(HashMap * map,  char * key) {   
     long capacidad = map->capacity ;
     
-    long posible_posicion = hash(key, capacidad) ;
-    if (map->buckets[posible_posicion]->key == key) return map->buckets[posible_posicion] ;
-    while (map->buckets[posible_posicion] != NULL){
-        posible_posicion = (posible_posicion + 1) % capacidad ;
-        if (strcmp(map->buckets[posible_posicion]->key, key) == 0) return map->buckets[posible_posicion] ;
+    long posible_pos = hash(key, capacidad) ;
+    if (map->buckets[posible_pos]->key == key) return map->buckets[posible_pos] ;
+    while (map->buckets[posible_pos] != NULL){
+        posible_pos = (posible_pos + 1) % capacidad ;
+        if (strcmp(map->buckets[posible_pos]->key, key) == 0) return map->buckets[posible_pos] ;
     }
     return NULL ;
 }
