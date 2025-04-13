@@ -508,3 +508,8 @@ hashmap.c:66:61: error: invalid type argument of unary '*' (have 'long int')
      map->buckets = (Pair **) realloc(map->buckets, (Pair *) * new_capacity) ;
                                                              ^~~~~~~~~~~~~~
 f92deb5
+Sun, Apr 13, 2025  6:50:35 PM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+648cce4

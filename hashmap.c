@@ -63,7 +63,7 @@ void enlarge(HashMap * map) {
     Pair **buckets_auxiliar = map->buckets ;
     map->capacity *= 2 ;
     long new_capacity = map->capacity ;
-    map->buckets = (Pair **) realloc(map->buckets, (Pair *) * new_capacity) ;
+    map->buckets = (Pair **) realloc(map->buckets, sizeof(Pair *) * new_capacity) ;
     for(long i = 0 ; i < new_capacity ; i++){
         map->buckets[i] = (Pair *) malloc(sizeof(Pair)) ;
         map->buckets[i] = NULL ;
